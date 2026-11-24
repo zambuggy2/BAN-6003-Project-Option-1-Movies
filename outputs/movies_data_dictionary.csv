@@ -1,0 +1,33 @@
+column_name,data_type,description,source,transformation_or_derivation,notes_or_concerns
+movieId,int64,Unique identifier for each movie,movies,Original identifier used as the primary key,Must be unique and cannot be missing
+tmdbId,int64,id assigned by The Movie Database (TMDb),movies,Retained as an identifier for joining additional movie data,Check for missing values and duplicate identifiers before joining
+imdb_id,str,id assigned by The Internet Movie Database (IMDb),movies,Retained as an identifier for joining additional movie data,Check for missing values and duplicate identifiers before joining
+title,str,common title or localized title,movies,Retained as an identifier for joining additional movie data,Check for missing values and duplicate identifiers before joining
+original_title,str,official title or legal title,movies,Retained as an identifier for joining additional movie data,Check for missing values and duplicate identifiers before joining
+original_language,str,,,,
+release_date,str,,,,
+runtime,float64,,,,
+budget,int64,,,,
+revenue,float64,,,,
+popularity,float64,,,,
+vote_average,float64,,,,
+vote_count,float64,,,,
+genres,str,,,,
+production_companies,str,,,,
+production_countries,str,,,,
+adult,bool,,,,
+status,str,,,,
+genres_list,str,,,,
+primary_genre,str,,,,
+release_year,int64,,,,
+user_rating_mean,float64,,,,
+user_rating_count,float64,,,,
+user_rating_std,float64,,,,
+first_rating_date,datetime64[us],,,,
+last_rating_date,datetime64[us],,,,
+director,str,,,,
+top_cast,str,,,,
+keywords_list,str,,,,
+has_revenue,Int64,,,,
+rating_target_eligible,bool,,,,
+high_user_rating,Int64,,,,
